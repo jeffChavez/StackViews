@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="473" height="214"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Y4F-IK-PIn">
+                    <rect key="frame" x="0.0" y="0.0" width="473" height="100"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7AR-e6-E4X">
+                            <rect key="frame" x="0.0" y="0.0" width="112.5" height="100"/>
+                            <color key="backgroundColor" red="0.93407950129533679" green="0.93407950129533679" blue="0.93407950129533679" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" priority="999" constant="100" id="m29-bu-iQG"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wOd-Dh-1kS">
+                            <rect key="frame" x="120.5" y="0.0" width="112" height="100"/>
+                            <color key="backgroundColor" red="0.93407950129533679" green="0.93407950129533679" blue="0.93407950129533679" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" priority="999" constant="100" id="Y4O-CH-qlP"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dJg-Sb-eFc">
+                            <rect key="frame" x="240.5" y="0.0" width="112.5" height="100"/>
+                            <color key="backgroundColor" red="0.93407950129533679" green="0.93407950129533679" blue="0.93407950129533679" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" priority="999" constant="100" id="74q-zG-fLw"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FqT-0V-WVk">
+                            <rect key="frame" x="361" y="0.0" width="112" height="100"/>
+                            <color key="backgroundColor" red="0.93407950129533679" green="0.93407950129533679" blue="0.93407950129533679" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" priority="999" constant="100" id="soI-eY-Dd0"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Y4F-IK-PIn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="B1C-cs-QEI"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Y4F-IK-PIn" secondAttribute="trailing" id="bTu-ne-gtE"/>
+                <constraint firstItem="Y4F-IK-PIn" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="jk6-8w-PPc"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Y4F-IK-PIn" secondAttribute="bottom" id="uPL-ER-KpR"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-37.5" y="-190"/>
+        </view>
+    </objects>
+</document>

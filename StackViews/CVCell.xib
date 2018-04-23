@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CVCELL" id="88h-Xt-iHQ" customClass="CVCell" customModule="StackViews" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="176" height="286"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="176" height="286"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VB1-Wc-OdY" customClass="DetailedView" customModule="StackViews" customModuleProvider="target">
+                        <rect key="frame" x="8" y="8" width="160" height="270"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" priority="999" constant="160" id="UI1-U5-eUa"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="plK-Km-2mb" firstAttribute="bottom" secondItem="VB1-Wc-OdY" secondAttribute="bottom" constant="8" id="KCo-Rp-Vaz"/>
+                <constraint firstItem="plK-Km-2mb" firstAttribute="trailing" secondItem="VB1-Wc-OdY" secondAttribute="trailing" constant="8" id="LiT-TA-UCm"/>
+                <constraint firstItem="VB1-Wc-OdY" firstAttribute="leading" secondItem="plK-Km-2mb" secondAttribute="leading" constant="8" id="eTl-KR-Xs5"/>
+                <constraint firstItem="VB1-Wc-OdY" firstAttribute="top" secondItem="plK-Km-2mb" secondAttribute="top" constant="8" id="ft9-zx-8CO"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="plK-Km-2mb"/>
+            <size key="customSize" width="187" height="286"/>
+            <connections>
+                <outlet property="detailedView" destination="VB1-Wc-OdY" id="pmY-jF-udk"/>
+            </connections>
+            <point key="canvasLocation" x="-303" y="-324"/>
+        </collectionViewCell>
+    </objects>
+</document>

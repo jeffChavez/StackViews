@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TVCELL" id="Um9-S9-MSG" customClass="TVCell" customModule="StackViews" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="242" height="479"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Um9-S9-MSG" id="oeD-SZ-RXh">
+                <rect key="frame" x="0.0" y="0.0" width="242" height="478.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ilw-56-Lhb">
+                        <rect key="frame" x="0.0" y="0.0" width="242" height="478.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="otT-2E-Vi6" customClass="DetailedView" customModule="StackViews" customModuleProvider="target">
+                                <rect key="frame" x="8" y="8" width="226" height="462.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Ilw-56-Lhb" firstAttribute="leading" secondItem="oeD-SZ-RXh" secondAttribute="leading" id="QH1-XB-Wme"/>
+                    <constraint firstAttribute="bottom" secondItem="Ilw-56-Lhb" secondAttribute="bottom" id="ZmD-4G-olA"/>
+                    <constraint firstItem="Ilw-56-Lhb" firstAttribute="top" secondItem="oeD-SZ-RXh" secondAttribute="top" id="Zwf-e7-0BZ"/>
+                    <constraint firstAttribute="trailing" secondItem="Ilw-56-Lhb" secondAttribute="trailing" id="gPX-nT-dR2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="detailedView" destination="otT-2E-Vi6" id="inP-BO-sal"/>
+            </connections>
+            <point key="canvasLocation" x="-298" y="56.5"/>
+        </tableViewCell>
+    </objects>
+</document>
