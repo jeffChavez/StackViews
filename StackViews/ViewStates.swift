@@ -25,5 +25,5 @@ let viewStates: [DetailedViewState] = {
 }()
 
 private func randomBool() -> Bool {
-    return Int(arc4random_uniform(1000) % 2) == 0 ? true : false
+    return arc4random_uniform(2) == 0
 }
